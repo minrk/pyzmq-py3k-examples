@@ -1,0 +1,3 @@
+The PyØMQ examples, updated for python3 syntax.  The changes should be quite small,
+but code that is valid on both versions is possible, but not as readable, which
+is undesirable in examples.
