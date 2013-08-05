@@ -16,7 +16,7 @@ from zmq import devices
 
 ctx = zmq.Context()
 
-dev = devices.ThreadDevice(zmq.FORWARDER, zmq.SUB, zmq.XREQ)
+dev = devices.ThreadDevice(zmq.FORWARDER, zmq.SUB, zmq.DEALER)
 dev.setsockopt_in(zmq.SUBSCRIBE, b"")
 dev.connect_in(b'tcp://127.0.0.1:5555')
 dev.connect_out(b'tcp://127.0.0.1:5556')
